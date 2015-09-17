@@ -23,7 +23,8 @@ public class UserAgent extends CordovaPlugin {
 
             try{
 
-                settings = ((WebView) webView.getEngine().getView()).getSettings();
+                // settings = ((WebView) webView.getEngine().getView()).getSettings();
+                settings = webView.getSettings();
 
             }catch (Exception error){
 
